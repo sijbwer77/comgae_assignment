@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="form-container">
+                <h1>Code Submission</h1>
+                <label>-문제 1-</label>
+                <p>파이썬으로 'Hello World!'를 출력하시오.</p>
+                <form id="submissionForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="code">Code:</label>
+                    <textarea id="code" name="code" rows="10" required></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-container">
+                <h2>Check Result</h2>
+                <p>제출한 코드를 확인하세요!</p>
+                <form id="checkForm">
+                    <label for="checkUsername">Username:</label>
+                    <input type="text" id="checkUsername" name="checkUsername" required>
+                    <label for="checkPassword">Password:</label>
+                    <input type="password" id="checkPassword" name="checkPassword" required>
+                    <label for="checkId">Submission ID:</label>
+                    <input type="number" id="checkId" name="checkId" required>
+                    <button type="submit" class="button">Check</button>
+                </form>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
